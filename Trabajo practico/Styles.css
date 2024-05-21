@@ -1,6 +1,6 @@
-/* Establecer imagen de fondo */
+/* imagen de fondo */
 body {
-    background-image: url('fondo.jpg'); /* Ruta de tu imagen de fondo */
+    background-image: url('Imagenes/fondo.jpg'); /* Ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -24,10 +24,9 @@ header {
     top: 0;
     width: 100%;
 }
-.Logo {
+.Logo { /* acomodando el logo*/  
     width: 0;
     height: auto;
-    
 
 }
 nav ul {
@@ -37,7 +36,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
 nav ul li a {
@@ -53,61 +52,89 @@ h2 {
     color: #c0b5b5;
     text-align: center;
 }
+.parrafo1 {
+    padding: 100px;
+}
 
 .destino {
     margin-bottom: 40px;
 }
 
 .destino img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
+    display: inline-flex;
+    width: 260px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.destino img {
+    transition: all 500ms ease;
+    width: 100;
+    height: 100;
+}
+/* Le da el efecto a las imagenes*/
+.destino img:hover{ 
+    transform: scale(1.2);
+    cursor: pointer;
+    filter:brightness(70%);
+}
+
+
+/* Buscador con hover */
+.btn{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.buscar {
+    position: absolute;
+    padding: 5px;
+    right: 10px;
+}
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #050505;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
 }
 
 footer {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el pie de página */
-    color: #fff;
+    color: #fffcfc;
     text-align: center;
     padding: 30px;
-}
-
-/* Estilos específicos para la galería */
-.imagen-galeria {
-    margin-bottom: 20px;
-}
-
-.imagen-galeria img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-}
-/* Estilos para la barra de búsqueda */
-.search-form {
-    text-align: right;
-    width: 100%;
-
-}
-.search-form input[type="text"] {
-    padding: 10px;
-    width: 100px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-}
-.search-form input[type="text"]:hover,
-.search-form input[type="text"]:focus {
-    border-color: #6d6b6b;
-}
-.search-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
-}
-.search-form button:hover {
-    background-color: #555;
 }
