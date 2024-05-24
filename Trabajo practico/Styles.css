@@ -43,48 +43,6 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
-section {
-    padding-top: 13rem;
-}
-
-h2 {
-    color: #c0b5b5;
-    text-align: center;
-}
-.parrafo1 {
-    padding: 100px;
-}
-
-.destino {
-    margin-bottom: 40px;
-}
-
-.destino img {
-    display: inline-flex;
-    width: 260px;
-    height: 200px;
-    margin-top: 10px;
-    margin-left: 55px;
-    margin-right: 5px;
-    border-radius: 5px;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.destino img {
-    transition: all 500ms ease;
-    width: 100;
-    height: 100;
-}
-/* Le da el efecto a las imagenes*/
-.destino img:hover{ 
-    transform: scale(1.2);
-    cursor: pointer;
-    filter:brightness(70%);
-}
-
-
 /* Buscador con hover */
 .btn{ 
     margin: 0%;
@@ -130,6 +88,55 @@ h2 {
 
 .buscar input:focus {
     width: 240px;
+}
+section {
+    padding-top: 13rem;
+}
+
+h2 {
+    color: #c0b5b5;
+    text-align: center;
+}
+
+.destino {
+    margin-bottom: 40px;
+}
+
+.destino img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 6px;
+    width: 260px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.destino img {
+    transition: all 500ms ease;
+    width: 100;
+    height: 100;
+}
+/* Le da el efecto a las imagenes*/
+.destino img:hover{ 
+    transform: scale(1.2);
+    cursor: pointer;
+    filter:brightness(70%);
+}
+
+.conteiner{
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.5)
+    
+}
+.imagen-galeria{
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 footer {
