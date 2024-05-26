@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./formulario/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/573bc64056.js" crossorigin="anonymous"></script>
+    <script src="./formulario/main.js" defer></script>
+    <title>turismo</title>
+</head>
+<body>
+    <header>
+        <!-- Logo ponerlo a la izquierda y ajustar-->
+        <div class="Logo">
+            <img src="Imagenes/Logo.png" alt="Logo de la empresa" width="120" height="ajustar--">
+        </div>
+        <h1>Explora el Mundo</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Volver al Inicio</a></li>
+                <!-- <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="formulario__general">
+        <div class="titulo">
+            <h1>Contacto</h1>
+            <h2>¿Quieres contactarme?</h2>
+            <p class="parrafo">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        </div>
+
+        <form class="formulario" id="formulario">
+            <div id="grupo__nombre">
+                <input class="formulario-contacto" id="nombre" type="text" placeholder="nombre" name="nombre">
+                <i class="formulario__validacion fa-solid fa-circle-check"></i>
+                <p class="form-parrafo">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras y espacios.</p>
+            </div>
+
+            <div id="grupo__email">
+                <input class="formulario-contacto" id="email" type="text" placeholder="email" name="email">
+                <i class="formulario__validacion fa-solid fa-circle-check"></i>
+                <p class="form-parrafo">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+
+            <div id="grupo__asunto">
+                <input class="formulario-contacto" id="asunto" type="text" placeholder="asunto" name="asunto">
+                <i class="formulario__validacion fa-solid fa-circle-check"></i>
+                <p class="form-parrafo">El asunto tiene que ser de 4 a 10 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+
+            <!-- textarea -->
+            <textarea class="formulario-contacto" name="mensaje" id="mensaje" placeholder="Escribe un mensaje"></textarea>
+        
+            <!-- terminos y condiciones -->
+            <div  id="grupo__terminos" class="grupo__terminos">
+                <label class="form__label"><input class="form__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones</label> 
+            </div>
+
+            <!-- mensaje de error -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario.</p>
+            </div>
+
+            <!-- submit -->
+            <div class="boton-submit">
+                <input id="submit" class="submit" type="submit" placeholder="Enviar formulario" name="submit">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado con exito!</p>
+            </div>
+        </form>
+        <div class="maps">
+            <h1>Atención al Público</h1>
+                <p>Tte. Gral. Juan Domingo Perón (C1015), CABA, Argentina</p>
+                <p>Teléfono : (+54) 11 123455</p>
+                <p>E-mail : info@la12delmundo.com.ar</p>
+            <h2>Horarios de Atención</h2>
+                <p>Lunes a Viernes de 10 a 13 hs y de 14 a 18 h</p>
+                <p>Sábados de 10 a 13 h</p>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9245926332446!2d-58.386648736587226!3d-34.60606827876718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac538ef4561%3A0x749b3149058b3c31!2sTte.%20Gral.%20Juan%20Domingo%20Per%C3%B3n%2C%20C1015%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716441113847!5m2!1ses-419!2sar" width="100%" height="200" style="border: 0;" title="Ubicacion de la empresa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>
+</html>

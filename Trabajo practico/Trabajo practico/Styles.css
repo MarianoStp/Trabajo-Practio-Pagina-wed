@@ -1,0 +1,230 @@
+/* imagen de fondo */
+body {
+    background-image: url('Imagenes/fondo.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #dbbebe; /* Color de texto principal sobre fondo */
+}
+
+/* El estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(207, 192, 192, 0.5); /* Fondo semi-transparente para el encabezado */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.Logo { /* acomodando el logo*/  
+    width: 0;
+    height: auto;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 18px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Buscador con hover */
+.btn{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.buscar {
+    position: absolute;
+    padding: 5px;
+    right: 10px;
+}
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #050505;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+section {
+    padding-top: 13rem;
+}
+
+h2 {
+    color: #c0b5b5;
+    text-align: center;
+}
+
+.destino {
+    margin-bottom: 40px;
+}
+
+.destino img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 6px;
+    width: 260px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.destino img {
+    transition: all 500ms ease;
+    width: 100;
+    height: 100;
+}
+/* Le da el efecto a las imagenes*/
+.destino img:hover{ 
+    transform: scale(1.2);
+    cursor: pointer;
+    filter:brightness(70%);
+}
+
+.conteiner{
+    padding: 60px;
+    background-color: rgba(0, 0, 0, 0.5)
+    
+}
+.imagen-galeria{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el pie de página */
+    color: #fffcfc;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (min-width: 576px){
+
+    .destino {
+        display: grid;
+        grid-template: 
+        "imagenes imagenes" 250px/
+        300px 300px;
+    }
+
+    .imagen-galeria{
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        margin: 15px;
+    }
+
+    .imagen-galeria2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteiner{
+        width: 500px
+    }
+
+    footer{
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 1024px){
+    .destino{
+        display: grid;
+        grid-template:
+        "imagenes imagenes" 
+        "imagenes imagenes" 
+        "imagenes imagenes"
+        "imagenes imagenes" 100px/
+        350px 350px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .imagen-galeria{
+        display: grid;
+        grid-template: 
+        "imagenes imagenes" 0px/
+        150px;
+        gap: 100px;
+    }
+    .imagen-galeria2{
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+@media (min-width: 1200px){
+    .destino {
+        display: grid;
+        grid-template: 
+        "imagenes imagenes imagenes imagenes" 250px/
+        320px 320px 320px 320px;
+    }
+
+    .imagen-galeria{
+        display: grid;
+        grid-template: 
+        "imagenes imagenes" 0px/
+        150px;
+    }
+    .imagen-galeria2{
+        position: relative;
+        bottom: 15px;
+    }
+
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+}

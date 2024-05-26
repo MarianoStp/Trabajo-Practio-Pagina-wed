@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://s1.1zoom.me/b5157/841/Rivers_Forests_Coast_Scenery_Spruce_Grass_566700_1920x1080.jpg);
+}
+
+header {
+    background-color: rgba(207, 192, 192, 0.5); /* Fondo semi-transparente para el encabezado */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+.Logo { /* acomodando el logo*/  
+    width: 0;
+    height: auto;
+
+}
+
+.titulo{
+    margin: 10px 15px;
+}
+
+.titulo h1{
+    font-weight: 900;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #1a1f25;
+}
+
+.titulo h2, .parrafo{
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #31363F;
+}
+
+.formulario__general{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario__imagen{
+    position: absolute;
+    right: 90px;
+    top: 15px
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto{
+    width: 850px;
+    margin: 10px 15px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    outline: none;
+}
+
+.formulario textarea{
+    width: 850px;
+    height: 200px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    outline: none;
+}
+
+.formulario-contacto{
+    background: #fff;
+    transition: .3s ease all;
+}
+
+.formulario-contacto:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    /* box-shadow: 3px 0px 30px rgba(163,163,163, 0.4); */
+}
+
+
+.grupo__terminos{
+    margin: 10px 15px;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #31363F;
+}
+
+.form__checkbox{
+    margin: 10px 5px;
+}
+
+.submit{
+    background-color: #76ABAE;
+    width: 20%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 15px;
+
+}
+
+/* .maps{
+    width: 410px;
+    padding: 15px 10px;
+    margin: 10px;
+} */
+
+/* validacion */
+.form-parrafo{
+    display: none;
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+.form-parrafo-activo{
+    display: block;
+}
+/*  */
+.formulario__grupo-correcto .formulario-contacto{
+    border: 3px solid #1ed12d;
+}
+
+.formulario__grupo-correcto .formulario__validacion{
+    color: #1ed12d;
+}
+
+.formulario__grupo-incorrecto .formulario-contacto{
+    opacity: 1;
+    border: 3px solid #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion{
+    color: #bb2929;
+}
+/*  */
+.formulario__mensaje{
+    display: none;
+    color: #bb2929;
+    font-size: 18px;
+    margin: 5px 15px;
+}
+
+.formulario__mensaje-activo{
+    display: block;
+}
+/*  */
+.formulario__mensaje-exito{
+    display: none;
+    color: #1ed12d;
+    font-size: 18px;
+    margin: 5px 15px;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
+@media (min-width: 576px){
+    .parrafo{
+        margin: 10px 10px;
+        font-size: 11px;
+    }
+
+    .formulario__general{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        top: 170px;
+    }
+
+    .formulario-contacto{
+        width: 300px;
+    }
+
+    .formulario textarea{
+        width: 300px;
+    }
+
+    .boton-submit{
+        width: 500px;
+    }
+
+    .maps{    
+        width: 300px;
+        padding: 15px 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .formulario__general{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario-contacto{
+        width: 700px;
+    }
+
+    .formulario textarea{
+        width: 700px;
+    }
+
+    .boton-submit{
+        width: 1000px;
+    }
+
+    .maps{
+        width: 410px;
+        padding: 15px 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px){
+    .parrafo{
+        margin: 10px 15px;
+        font-size: 20px;
+    }
+
+    .formulario__general{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario-contacto{
+        width: 800px;
+    }
+
+    .formulario textarea{
+        width: 800px;
+    }
+
+    .boton-submit{
+        width: 1000px;
+    }
+
+    .maps{
+        /* position: absolute;
+        right: 150px;
+        top: 0; */
+        width: 410px;
+        padding: 15px 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .formulario__general{
+        display: flex;
+        justify-content: space-around;
+    }
+    .formulario-contacto{
+        width: 700px;
+    }
+
+    .formulario textarea{
+        width: 700px;
+    }
+
+    .boton-submit{
+        width: 1000px;
+    }
+
+    .maps{
+    position: absolute;
+    right: -200px;
+    top: 150px;
+    width: 410px;
+    padding: 15px 10px;
+    margin: 10px;
+    }
+}
